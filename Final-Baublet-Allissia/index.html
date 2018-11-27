@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+		Allissia Baublet Online Portfolio
+	-->
+
+<head>
+	<meta charset="utf-8">
+	<title>Allissia Baublet</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<!-- Google Fonts -->
+
+	<!-- Font Awesome Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.4.2/js/all.js" integrity="sha384-wp96dIgDl5BLlOXb4VMinXPNiB32VYBSoXOoiARzSTXY+tsK8yDTYfvdTyqzdGGN" crossorigin="anonymous"></script>
+
+	<!-- Other CSS for Plugins and such -->
+
+	<!-- Local CSS -->
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!--[if lte IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+</head>
+
+<!-- Landscape image from Unsplash and
+     custom logo-->
+<header>
+	<div class="container">
+		<h1>Allissia Baublet</h1>
+	</div>
+</header>
+
+<!-- Navigation menu that sits on the left on each viewport and turns into a hamburger menu on the smallest viewport
+			 Overlay and Dropdown Functionality by W3Schools...
+	-->
+
+<nav>
+	<div class="container">
+		<span onclick="openNav()" class="icon"><i class="fas fa-bars fa-2x"></i></span>
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+			<!-- Dropdown Container -->
+			<div class="dropdown">
+				<a href="#" class="dropbtn"> Work</a>
+				<!-- <div class="dropItems">
+					<a href="#web-design">Web Design</a>
+					<a href="#osxtern">OSXtern</a>
+				  <a href="#bso">BSO</a>
+					<a href="#ucommon">Ucommon</a>
+					<a href="#digital-imagery">Digital Imagery</a>
+				</div> -->
+			</div>
+			<a href="#">Resume</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+		</div>
+		<!-- Hidden Nav for larger screens -->
+		<div class="largeNav">
+		<!-- Dropdown Container -->
+			<div class="dropdown">
+				<a href="#" class="dropbtn"> Work</a>
+				<!-- <div class="dropItems">
+					<a href="#web-design">Web Design</a>
+					<a href="#osxtern">OSXtern</a>
+					<a href="#bso">BSO</a>
+					<a href="#ucommon">Ucommon</a>
+					<a href="#digital-imagery">Digital Imagery</a>
+				</div> -->
+			</div>
+			<a href="#">Resume</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+		</div>
+	</div>
+</nav>
+
+<script>
+	/* Set the width of the side navigation to associated screen width */
+	function openNav() {
+		//orange-small
+		if(document.documentElement.clientWidth >= 576 ){
+			document.getElementById("mySidenav").style.width = "200px";
+		}else if(document.documentElement.clientWidth < 576){
+			document.getElementById("mySidenav").style.width = "150px";
+		}
+	}
+
+	/* Set the width of the side navigation to 0 */
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+	}
+</script>
+
+<!-- <footer>
+	<p>Copyright &copy; Allissia Baublet, 2016</p>
+</footer> -->
+
+</html>

@@ -1,0 +1,174 @@
+<body>
+	<article id="main">
+		<img id="img1" src="images/me2.png">
+		<p> My name is Allissia Baublet. I was born and raised in Wells County, Indiana. I am now a Senior studying Informatics, with a cognate in Computer Science and minors in CS and Human Centered Computing, at Indiana University in Bloomington.
+			I enjoy the challenge of problem solving, love to help people, and I am very organized in the work I do.
+			My hope after college is to become a Web Developer or designer.
+		</p>
+		</header>
+
+		<div id="projects">
+			<h2> Projects </h2>
+
+			<!-- =========================================== Random Projects ============================================== -->
+
+			<div id="random" class="doubleBorder">
+				<h3>Random Projects</h3>
+				<br>
+				<p> The link below will take you my github page that shows all the projects I did
+					at the TechPoint Bootcamp 2017. This camp taught me how to use the React framework with somewhat
+					advanced JavaScript to create various pages.
+				</p>
+				<a href="https://github.com/ballissia" target="_blank" style=" color: #FF00FF">React Projects</a>
+				<hr>
+
+				<h4> Bloomington Symphony Orchestra </h4>
+
+				<a href="http://www.bloomingtonsymphony.com/" target="_blank">
+					<img src="images/bso.JPG"></a>
+
+				<p> The link above will take you to the Bloomington Symphony Orchestra's new website redesigned by
+					<i>Adam Hughes, Alex Flinchum, Emily Wattimena, Deepthi Devireddy, Jesica Courtney</i> and myself. We are part
+					of an Indiana University organization called ServeIT and our mission is to provide nonprofit organizations
+					with new/updated technology that they cannot afford or need assistance with. BSO came to ServeIT looking for
+					a redesigned website that was modern and that expressed their mission and values.
+				</p>
+			</div>
+
+			<!-- =========================================== Design Projects ============================================== -->
+
+			<div id="design" class="grooveBorder">
+				<h3>Design Projects</h3>
+
+				<a href="https://projects.invisionapp.com/share/W29LB1454#/screens/209616509" target="_blank">
+					<h4>Ucommon</h4></a>
+
+				<p>At the link above, you will find a team project done in Info-I 300 based on Human Interaction with an Interface.
+					The assignment was to create a mockup of an application made for students. My team and I decided to make
+					a app that provides access an online community forum, the ability to apply for jobs and internships,
+					and a virtual network of connections to their peers and professionals.
+					InVision provides the mockup with some functionality for our conceptual idea.
+				</p>
+				<hr>
+				<a href="https://xd.adobe.com/view/47af3842-136b-4041-9321-b1be3343cbcf" target="_blank">
+					<h4>OSXtern</h4></a>
+
+				<p>This project was one completed as a techscreen for Xtern 2018. I was given a prompt for an application
+					called OSXtern that kept the user connected to Indianapolis and TechPoint. After a few days of hard work
+					and feedback, this is the final result (the link above). I created the mockup using the beta version of
+					Adobe XD, which is a very useful tool as a starting designer.
+				</p>
+			</div>
+
+			<!-- =========================================== Digital Imagery Projects ============================================ -->
+
+			<div id="digitalImagery" class="doubleBorder">
+				<h3> Digital Imagery </h3>
+				<h4> Hybrid Animal </h4>
+
+				<img src="images/hybridAnimal.jpg">
+				<br>
+				<p> This project was one of a series of projects for <i>Digital Imagery for Non-Majors</i>. The course focused mostly
+					on Adobe Photoshop and it's functions. This project was the first and was meant to teach us proper
+					selecting and positioning as well as color blending. We were tasked to choose two animals for our composition
+					and I chose a wolf, because I admire them, as well as the squirrel, because my best friend hates them. With a
+					well composed image, I have created the uncreatively named "Wolf-Squirrel".
+				</p>
+
+				<hr>
+
+				<h4> Composition A </h4>
+
+				<img id="compA" src="images/compA.jpg">
+				<br>
+				<p> The third of the series of projects used all of the skills we had gained to create a fantasy image. The assignment
+					was to take multiple pictures of a landcape, merge those pictures together to make one large image, then add figures into the image.
+					I love mythical creatures, so I tried to incorporate all of my favorites into this one image. I tried to make the composition make sense by adding the
+					portal through which the creatures came from. This was my favorite project of the entire class.
+				</p>
+
+				<hr>
+				<h4> Composition B </h4>
+
+				<video id="compB" src="images/compB.mp4" controls></video>
+				<br>
+				<p> The fourth and final project gave us insight into a new software called Adobe After Affects. For this project, we were to use
+					Composition A to create an animation. We could do anything we wanted as long as some of the subjects or objects moved in
+					the animation. I decided to continue with the mythical theme, making minor changes to the source images to accommodate my new ideas.
+					This video works best using Chrome.
+				</p>
+			</div>
+
+			<!-- =========================================== Website Building Projects ============================================ -->
+
+			<div id="siteBuilding">
+				<h2>Website Building</h2>
+				<p>This section features various websites that I have created from scratch. I101 was my first technology class
+					and an introduction to web design and development. A110 was a similar course that went a bit more in depth.
+					Finally, Web Design is the most recent site building class that I have taken that delves further into the
+					process and fine details of designing a website from structure to graphic design to responsive design to usability testing.
+				</p>
+
+				<!-- ======================================== Projects for Web Design ============================================ -->
+
+				<div id="webDesign" class="grooveBorder">
+					<h3> Web Design </h3>
+					<h4> Project 1: Recipe Structure </h4>
+
+					<a href="http://pages.iu.edu/~abaublet/Web_Design/Project1_Recipe/tiramisu-recipe.html" target="_blank">
+									<img src="images/tiramisu-recipe.JPG"></a>
+					<br>
+					<p> For this project, the idea was to learn how to structure web content on a page only using html tags and elements.
+						This task helped me understand how certain points of content should be layed out on a page and grouped closer together
+						if they are related. The design aspects of this project were muted in an effort to focus on the first level of
+						structuring.
+					</p>
+
+					<hr>
+					<h4> Project 2: Quote Design </h4>
+
+					<img src="images/quote_design.JPG" id="quote"></a>
+					<br>
+					<p> This project focused more on design using typography, positioning, and colors in relation to an image that would
+						appeal to the audience. The toughest part of this project was determining which part of the quote to emphasize
+						and if that part truly represented the quote and image's focus.
+					</p>
+				</div>
+			</div>
+		</div>
+	</article>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropItems {
+        display: none;
+        background-color: white;
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+     .dropItems a {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropItems {
+        display: block;
+    }
