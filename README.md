@@ -6,5 +6,9 @@ Created by Allissia Baublet on 11/27/2018
 Last Modified on: 11/27/2018
   Changes Include: Starting progress on site made of header and functional side nav.
 
+Last Modified on: 11/28/2018
+  Changes Include: Dropdown btn functionality in nav. Text shadow on heading name.
+
   Last Modified on: 11/28/2018
-    Changes Include: Dropdown btn functionality in nav. Text shadow on heading name.
+    Changes Include: Logo in nav.
+    Issues: Unseamless responsive flow. Bottom margin not active;

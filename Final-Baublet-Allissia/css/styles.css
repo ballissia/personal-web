@@ -63,6 +63,19 @@ html {
     }
 
 /******************************** NAVIGATION MENU *****************************************/
+    nav #logo{
+      width: 50%;
+      position: absolute;
+      left: -15px;
+      top: -4.5em;
+      border-radius: 20px;
+    }
+    .largeNav #logo{
+      width: 60%;
+      position: absolute;
+      left: 5%;
+      margin-bottom: 2.0em;
+    }
     .icon {
       position: relative;
       left: 5px;
@@ -105,7 +118,7 @@ html {
     .sidenav a, .largeNav a {
       position: relative;
       left: 15%;
-      margin: 30% 8px 8px 8px;
+      margin: 30% 8px 0px 8px;
       padding: 0;
       text-decoration: none;
       font-size: 20px;
@@ -184,6 +197,10 @@ img {
   nav .dropItems a{
     font-size: 16px;
     word-wrap: break-word;
+  }
+  nav #logo{
+    width: 40%;
+    top: -4.0em;
   }
 }
 
