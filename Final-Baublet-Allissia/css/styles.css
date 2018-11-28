@@ -59,6 +59,7 @@ html {
       color: white;
       font-size: 40px;
       margin: 15% auto;
+      text-shadow: 2px -2px 2px black;
     }
 
 /******************************** NAVIGATION MENU *****************************************/
@@ -128,8 +129,19 @@ html {
     }
 
 /************************ Drop Down Menu ************************/
+    .dropItems{
+      display: none;
+    }
+    nav .dropItems a{
+      font-size: 15px;
+      padding: 5px;
+      margin: 0;
+      left: 25%;
+    }
+    .dropdown:hover .dropItems{
+      display: block;
 
-
+    }
 
 /*
     TYPOGRAPHY
@@ -149,18 +161,7 @@ img {
   clear: both;
 }
 
-/*
-    LINKS
-*/
-/*
-    TABLES
-*/
-/*
-    HOME
-*/
-/*
-    ANOTHER PAGE
-*/
+
 /* MEDIA QUERIES */
 /* X-Small devices (portait phones, less than 576px) */
 /* All styles up to this point in the stylesheet are for X-Small */
@@ -179,6 +180,10 @@ img {
   }
   .sidenav .closebtn {
     font-size: 45px;
+  }
+  nav .dropItems a{
+    font-size: 16px;
+    word-wrap: break-word;
   }
 }
 

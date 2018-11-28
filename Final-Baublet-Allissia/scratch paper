@@ -138,37 +138,3 @@
 		</div>
 	</article>
 </body>
-
-
-
-
-
-Modification to determine github functionality
-
-
-
-
-
-
-
-
-
-
-    /* Dropdown Content (Hidden by Default) */
-    .dropItems {
-        display: none;
-        background-color: white;
-        z-index: 1;
-    }
-
-    /* Links inside the dropdown */
-     .dropItems a {
-        display: block;
-        padding: 0;
-        margin: 0;
-    }
-
-    /* Show the dropdown menu on hover */
-    .dropdown:hover .dropItems {
-        display: block;
-    }
