@@ -15,3 +15,7 @@ Last Modified on: 11/28/2018
 
 Last Modified on: 11/29/2018
   Changes Include: Removed logo from nav due to flow issues. May return at later date.
+
+Last Modified on: 11/30/2018
+  Changes Include: Added about me content separated into sections.
+  Issues: Flexbox refuses to row wrap/ grow/ shrink.

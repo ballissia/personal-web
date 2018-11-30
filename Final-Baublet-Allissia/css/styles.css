@@ -40,6 +40,10 @@ html {
     /*centers the container with room at top*/
     width: 400px;
   }
+  .flex {
+    margin: 15px auto;
+    /*centers the container with room at top*/
+  }
 
 /****************** HEADER *************/
     /* Photo by Will Swann on Unsplash*/
@@ -140,9 +144,48 @@ html {
     }
     .dropdown:hover .dropItems{
       display: block;
-
     }
 
+/************************ Body *************************************/
+
+    .aboutMe{
+      background: lightgray;
+      padding: 5px;
+      margin: 5px;
+    }
+    .aboutMe .flex{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .aboutMe .who{
+      border: 2px solid black;
+      margin: 10px;
+      padding: 0 10px;
+      border-radius: 5px;
+    }
+    .aboutMe .where{
+      border: 2px solid black;
+      margin: 10px;
+      padding: 0 10px;
+      border-radius: 5px;
+    }
+    .aboutMe .what{
+      border: 2px solid black;
+      margin: 10px;
+      padding: 0 10px;
+      border-radius: 5px;
+    }
+    .aboutMe h2{
+      text-align: center;
+      border-bottom: 2px dashed black;
+    }
+    .aboutMe p{
+      margin: 0 auto;
+      text-align: center;
+      font-size: 18px;
+      padding: 0 5px 10px 5px;
+    }
 /*
     TYPOGRAPHY
 */
@@ -152,6 +195,11 @@ html {
 img {
   width: 100%;
   display: block;
+}
+
+.aboutMe img{
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* clearfix - in case you decide to float elements */
@@ -167,70 +215,69 @@ img {
 /* All styles up to this point in the stylesheet are for X-Small */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  body {
-    background-color: orange;
-  }
-  header h1 {
-    font-size: 50px;
-  }
+  body { background-color: orange;}
+  header h1 { font-size: 50px;}
   .sidenav a {
     font-size: 25px;
     position: relative;
     left: 20px;
   }
-  .sidenav .closebtn {
-    font-size: 45px;
-  }
+  .sidenav .closebtn { font-size: 45px;}
   nav .dropItems a{
     font-size: 16px;
     word-wrap: break-word;
   }
+  .aboutMe{
+    margin: 4px;
+  }
+  .aboutMe img{ width: 60%;}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  body {
-    background-color: green;
-  }
-  .icon {
-    visibility: hidden;
-  }
+  body { background-color: green;}
+  .icon { visibility: hidden;}
   nav .container {
     background-color: inherit;
   }
-  header {
-    width: 90%;
-    margin: 0 auto;
-  }
+  header { width: 90%; margin: 0 auto;}
   .largeNav{
+    position: absolute;
     width: 150px;
     left: 5%;
     top: 155px;
   }
-  .largeNav a{
-    font-size: 20px;
-    left: 20px;
-  }
-  .sidenav{
-    display: none;
-  }
+  .largeNav a{ font-size: 20px; left: 20px;}
+  .sidenav{ display: none;}
   .sidenav .closebtn{ visibility: hidden;}
+  .aboutMe{
+    width: 70%;
+    position: relative;
+    left: 25%;
+    top: -60px;
+    margin: 11px 0;
+  }
+  .aboutMe img{ position: relative;}
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body {
-    background-color: blue;
+  body { background-color: blue;}
+  .aboutMe{
+    left: 20%;
+    width: 75%;
+  }
+  .aboutMe .container{
+    margin: 0 auto;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  body {
-    background-color: purple;
-  }
-  header {
-    width: 80%;
-  }
+  body { background-color: purple; }
+  header { width: 80%;}
   .largeNav{ left: 10%;}
+  .aboutMe{
+    width: 70%;
+  }
 }
