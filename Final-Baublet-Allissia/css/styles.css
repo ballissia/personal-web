@@ -35,157 +35,166 @@ html {
 /*
     STRUCTURE
 */
-  .container {
-    margin: 15px auto;
-    /*centers the container with room at top*/
-    width: 400px;
-  }
-  .flex {
-    margin: 15px auto;
-    /*centers the container with room at top*/
-  }
+.container {
+  margin: 15px auto;
+  /*centers the container with room at top*/
+  width: 400px;
+}
+
+.flex {
+  margin: 15px auto;
+  /*centers the container with room at top*/
+}
 
 /****************** HEADER *************/
-    /* Photo by Will Swann on Unsplash*/
-    header {
-      height: 150px;
-      background: black;
-      background: url('../images/waterfall.jpg') no-repeat fixed;
-      background-size: cover;
-      background-position: center top;
-      padding: 5px;
-      padding-bottom: 20px;
-      margin: 5px;
-    }
+/* Photo by Will Swann on Unsplash*/
+header {
+  height: 150px;
+  background: black;
+  background: url('../images/waterfall.jpg') no-repeat fixed;
+  background-size: cover;
+  background-position: center top;
+  padding: 5px;
+  padding-bottom: 20px;
+  margin: 5px;
+}
 
-    header h1 {
-      text-align: center;
-      color: white;
-      font-size: 40px;
-      margin: 15% auto;
-      text-shadow: 2px -2px 2px black;
-    }
+header h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin: 15% auto;
+  text-shadow: 2px -2px 2px black;
+}
 
 /******************************** NAVIGATION MENU *****************************************/
-    .icon {
-      position: relative;
-      left: 5px;
-      top: 4px;
-      color: black;
-    }
+.icon {
+  position: relative;
+  left: 5px;
+  top: 4px;
+  color: black;
+}
 
-    nav .container {
-      width: 98%;
-      height: 50px;
-      background-color: gray;
-      margin: 5px;
-      padding: 5px;
-    }
+nav .container {
+  width: 98%;
+  height: 50px;
+  background-color: gray;
+  margin: 5px;
+  padding: 5px;
+}
 
-    /* The side navigation menu */
-    .sidenav, .largeNav {
-      height: 100%;
-      /* 100% Full-height */
-      width: 0;
-      /* 0 width - change this with JavaScript */
-      position: fixed;
-      /* Stay in place */
-      z-index: 1;
-      /* Stay on top */
-      top: 0;
-      /* Stay at the top */
-      left: 0;
-      background-color: #111;
-      /* Black*/
-      overflow-x: hidden;
-      /* Disable horizontal scroll */
-      padding-top: 60px;
-      /* Place content 60px from the top */
-      transition: 0.5s;
-      /* 0.5 second transition effect to slide in the sidenav */
-    }
+/* The side navigation menu */
+.sidenav, .largeNav {
+  height: 200%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
 
-    /* The navigation menu links */
-    .sidenav a, .largeNav a {
-      position: relative;
-      left: 15%;
-      margin: 30% 8px 0px 8px;
-      padding: 0;
-      text-decoration: none;
-      font-size: 20px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
+/* The navigation menu links */
+.sidenav a, .largeNav a {
+  position: relative;
+  left: 15%;
+  margin: 30% 8px 0px 8px;
+  padding: 0;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
-    /* When you mouse over the navigation links, change their color */
-    .sidenav a:hover, .largeNav a:hover {
-      color: #f1f1f1;
-      text-decoration: underline;
-    }
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .largeNav a:hover {
+  color: #f1f1f1;
+  text-decoration: underline;
+}
 
-    /* Position and style the close button (top right corner) */
-    .sidenav .closebtn {
-      position: absolute;
-      top: -20px;
-      left: 70%;
-      font-size: 36px;
-    }
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: -20px;
+  left: 70%;
+  font-size: 36px;
+}
 
 /************************ Drop Down Menu ************************/
-    .dropItems{
-      display: none;
-    }
-    nav .dropItems a{
-      font-size: 15px;
-      padding: 5px;
-      margin: 0;
-      left: 25%;
-    }
-    .dropdown:hover .dropItems{
-      display: block;
-    }
+.dropItems {
+  display: none;
+}
+
+nav .dropItems a {
+  font-size: 15px;
+  padding: 5px;
+  margin: 0;
+  left: 25%;
+}
+
+.dropdown:hover .dropItems {
+  display: block;
+}
 
 /************************ Body *************************************/
+.aboutMe {
+  background: lightgray;
+  padding: 5px;
+  margin: 5px;
+}
 
-    .aboutMe{
-      background: lightgray;
-      padding: 5px;
-      margin: 5px;
-    }
-    .aboutMe .flex{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    .aboutMe .who{
-      border: 2px solid black;
-      margin: 10px;
-      padding: 0 10px;
-      border-radius: 5px;
-    }
-    .aboutMe .where{
-      border: 2px solid black;
-      margin: 10px;
-      padding: 0 10px;
-      border-radius: 5px;
-    }
-    .aboutMe .what{
-      border: 2px solid black;
-      margin: 10px;
-      padding: 0 10px;
-      border-radius: 5px;
-    }
-    .aboutMe h2{
-      text-align: center;
-      border-bottom: 2px dashed black;
-    }
-    .aboutMe p{
-      margin: 0 auto;
-      text-align: center;
-      font-size: 18px;
-      padding: 0 5px 10px 5px;
-    }
+.aboutMe .flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.aboutMe .who {
+  border: 2px solid black;
+  margin: 10px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.aboutMe .where {
+  border: 2px solid black;
+  margin: 10px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.aboutMe .what {
+  border: 2px solid black;
+  margin: 10px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.aboutMe h2 {
+  text-align: center;
+  border-bottom: 2px dashed black;
+}
+
+.aboutMe p {
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 18px;
+  padding: 0 5px 10px 5px;
+}
+
 /*
     TYPOGRAPHY
 */
@@ -197,7 +206,7 @@ img {
   display: block;
 }
 
-.aboutMe img{
+.aboutMe img {
   width: 50%;
   margin: 0 auto;
 }
@@ -209,75 +218,126 @@ img {
   clear: both;
 }
 
-
 /* MEDIA QUERIES */
 /* X-Small devices (portait phones, less than 576px) */
 /* All styles up to this point in the stylesheet are for X-Small */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  body { background-color: orange;}
-  header h1 { font-size: 50px;}
+  body {
+    background-color: orange;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+
   .sidenav a {
     font-size: 25px;
     position: relative;
     left: 20px;
   }
-  .sidenav .closebtn { font-size: 45px;}
-  nav .dropItems a{
+
+  .sidenav .closebtn {
+    font-size: 45px;
+  }
+
+  nav .dropItems a {
     font-size: 16px;
     word-wrap: break-word;
   }
-  .aboutMe{
+
+  .aboutMe {
     margin: 4px;
   }
-  .aboutMe img{ width: 60%;}
+
+  .aboutMe img {
+    width: 60%;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  body { background-color: green;}
-  .icon { visibility: hidden;}
+  body {
+    background-color: green;
+  }
+
+  .icon {
+    visibility: hidden;
+  }
+
   nav .container {
     background-color: inherit;
   }
-  header { width: 90%; margin: 0 auto;}
-  .largeNav{
+
+  header {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .largeNav {
     position: absolute;
     width: 150px;
     left: 5%;
     top: 155px;
   }
-  .largeNav a{ font-size: 20px; left: 20px;}
-  .sidenav{ display: none;}
-  .sidenav .closebtn{ visibility: hidden;}
-  .aboutMe{
+
+  .largeNav a {
+    font-size: 20px;
+    left: 20px;
+  }
+
+  .sidenav {
+    display: none;
+  }
+
+  .sidenav .closebtn {
+    visibility: hidden;
+  }
+
+  .aboutMe {
     width: 70%;
     position: relative;
     left: 25%;
     top: -60px;
     margin: 11px 0;
   }
-  .aboutMe img{ position: relative;}
+
+  .aboutMe img {
+    position: relative;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body { background-color: blue;}
-  .aboutMe{
+  body {
+    background-color: blue;
+  }
+
+  .aboutMe {
     left: 20%;
     width: 75%;
   }
-  .aboutMe .container{
+
+  .aboutMe .container {
     margin: 0 auto;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  body { background-color: purple; }
-  header { width: 80%;}
-  .largeNav{ left: 10%;}
-  .aboutMe{
+  body {
+    background-color: purple;
+  }
+
+  header {
+    width: 80%;
+  }
+
+  .largeNav {
+    left: 10%;
+  }
+
+  .aboutMe {
     width: 70%;
   }
 }
