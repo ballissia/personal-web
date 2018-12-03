@@ -19,3 +19,6 @@ Last Modified on: 11/29/2018
 Last Modified on: 11/30/2018
   Changes Include: Added about me content separated into sections.
   Issues: Flexbox refuses to row wrap/ grow/ shrink.
+
+Last Modified on: 12/3/2018
+  Changes Include: Created projects page, installed and began lightbox gallery implementation

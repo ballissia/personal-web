@@ -85,7 +85,7 @@ nav .container {
 
 /* The side navigation menu */
 .sidenav, .largeNav {
-  height: 200%;
+  height: 100%;
   /* 100% Full-height */
   width: 0;
   /* 0 width - change this with JavaScript */
@@ -100,6 +100,8 @@ nav .container {
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
+  overflow-y: hidden;
+  /* Disable vertical scroll */
   padding-top: 60px;
   /* Place content 60px from the top */
   transition: 0.5s;
@@ -149,7 +151,7 @@ nav .dropItems a {
   display: block;
 }
 
-/************************ Body *************************************/
+/************************ About Me- Body *************************************/
 .aboutMe {
   background: lightgray;
   padding: 5px;
@@ -195,6 +197,11 @@ nav .dropItems a {
   padding: 0 5px 10px 5px;
 }
 
+/********************* Projects- Body **************/
+.projects .container{
+  overflow: hidden;
+}
+
 /*
     TYPOGRAPHY
 */
@@ -209,6 +216,10 @@ img {
 .aboutMe img {
   width: 50%;
   margin: 0 auto;
+}
+
+.thumb{
+  width: 30%;
 }
 
 /* clearfix - in case you decide to float elements */
