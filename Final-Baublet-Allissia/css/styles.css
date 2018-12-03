@@ -136,8 +136,9 @@ nav .container {
 }
 
 /************************ Drop Down Menu ************************/
-.dropItems {
-  display: none;
+.dropdown .dropItems {
+  height: 0;
+  overflow: hidden;
 }
 
 nav .dropItems a {
@@ -148,7 +149,12 @@ nav .dropItems a {
 }
 
 .dropdown:hover .dropItems {
-  display: block;
+  visibility: visible;
+  height: 150px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
 }
 
 /************************ About Me- Body *************************************/

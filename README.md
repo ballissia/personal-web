@@ -22,3 +22,6 @@ Last Modified on: 11/30/2018
 
 Last Modified on: 12/3/2018
   Changes Include: Created projects page, installed and began lightbox gallery implementation
+
+Last Modified on: 12/3/2018
+  Changes Include: Fixed transition in dropmenu
