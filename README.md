@@ -22,4 +22,4 @@ Last Modified on: 12/3/2018
   Issues: About me section spacing in responsiveness, continue trying calc().
 
 Last Modified on: 12/5/2018
-  Changes Include: Section positioning and responsiveness fixed.
+  Changes Include: Section positioning and responsiveness fixed, adjusted width of header and section, sticky nav menu.

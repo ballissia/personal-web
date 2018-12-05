@@ -139,7 +139,7 @@
     document.getElementById("mySidenav").style.width = "0";
   }
 
-  window.addEventListener("scroll", function() {
+  window.addEventListener("scroll", function stickyMenu() {
     // this is to get the large nav to be sticky
     let largeNav = document.getElementsByClassName("largeNav")[0];
     let aboutMe = document.getElementsByClassName("aboutMe")[0];
@@ -149,6 +149,8 @@
       let aboutMeBB = aboutMe.getBoundingClientRect();
 
       let adjustedTop = largeNav.adjustedTop || 0;
+      let adjustedBottom = largeNav.adjustedBottom || 0;
+
       if (bb.top < 0 || bb.bottom > window.innerHeight) {
         adjustedTop -= bb.top;
         // TODO: Hardcoded 155; try to replace with aboutMe.scrollTop

@@ -294,11 +294,13 @@ img {
     width: 90vw;
     /* margin: 0 auto; */
     margin-left: 5vw;
+
   }
 
   .largeNav {
     position: absolute;
     width: 150px;
+    /* height: 80vw; */
     left: 5vw;
     top: 155px;
   }
@@ -343,6 +345,7 @@ img {
   .aboutMe .container {
     margin: 0 auto;
   }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -351,15 +354,7 @@ img {
     background-color: purple;
   }
 
-  header {
-    width: 80vw;
-  }
-
-  .largeNav {
-  }
-
   .aboutMe {
-    width: calc(80vw - 150px);
-    /* margin-left: calc(150px); */
+    width: calc(90vw - 150px);
   }
 }
