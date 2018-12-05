@@ -98,12 +98,31 @@
   <article class="projects">
     <h1 class="sr-only">Projects</h1>
     <div class="container">
+
       <div id="lightgallery">
         <a href="images/bso.jpg" class="galleryItem">
             <img src="images/bso.jpg" class="thumb"/>
         </a>
         <a href="images/quote_design.jpg" class="galleryItem">
             <img src="images/quote_design.jpg" class="thumb"/>
+        </a>
+        <a href="images/compA.jpg" class="galleryItem">
+            <img src="images/compA.jpg" class="thumb"/>
+        </a>
+        <a href="images/hybridAnimal.jpg" class="galleryItem">
+            <img src="images/hybridAnimal.jpg" class="thumb"/>
+        </a>
+        <a href="images/osxtern.jpg" class="galleryItem">
+            <img src="images/osxtern.jpg" class="thumb"/>
+        </a>
+        <a href="images/ucommon.jpg" class="galleryItem">
+            <img src="images/ucommon.jpg" class="thumb"/>
+        </a>
+        <a href="images/dagwoods-redesign.jpg" class="galleryItem">
+            <img src="images/dagwoods-redesign.jpg" class="thumb"/>
+        </a>
+        <a href="images/FigureLandscape_Video.mp4" class="galleryItem">
+            <img src="images/FigureLandscape_Video.jpg" class="thumb"/>
         </a>
       </div>
     </div>
@@ -135,11 +154,11 @@
       <script src="js/lightgallery-master/dist/js/lg-thumbnail.min.js"></script>
       <script src="js/lightgallery-master/dist/js/lg-fullscreen.min.js"></script>
       <script type="text/javascript">
-        // require(['./lightgallery.js'], function() {
-        //   require(["./lg-zoom.js", "./lg-thumbnail.js"], function(){
-        //     lightGallery(document.getElementById('lightgallery'));
-        //   });
-        // });
+        require(['./lightgallery.js'], function() {
+          require(["./lg-zoom.js", "./lg-thumbnail.js"], function(){
+            lightGallery(document.getElementById('lightgallery'));
+          });
+        });
         lightGallery(document.getElementById('lightgallery'));
       </script>
   </body>

@@ -108,7 +108,7 @@
 
           <section class="where">
             <h2>Where I'm From</h2>
-            <p>My home is in Wells County, Indiana, a small town called Poneto. It's surrounded by cornfields and known to the locals (at least the teenagers) as snoozeville. However, I enjoy sitting on the porch, in the peace and quiet, and reading or drawing.</p>
+            <p>My home is in Wells County, Indiana, a small town called Poneto. It's surrounded by cornfields and known to the locals (at least the teenagers) as snoozeville. However, I enjoy sitting on the porch, in the peace and quiet, and reading or drawing. With Poneto being such a small town, moving to Bloomington for college was terrifying and eye-opening all at once. </p>
           </section>
 
           <section class="what">
@@ -138,6 +138,26 @@
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+
+  window.addEventListener("scroll", function() {
+    // this is to get the large nav to be sticky
+    let largeNav = document.getElementsByClassName("largeNav")[0];
+    let aboutMe = document.getElementsByClassName("aboutMe")[0];
+
+    if (largeNav && aboutMe) {
+      let bb = largeNav.getBoundingClientRect();
+      let aboutMeBB = aboutMe.getBoundingClientRect();
+
+      let adjustedTop = largeNav.adjustedTop || 0;
+      if (bb.top < 0 || bb.bottom > window.innerHeight) {
+        adjustedTop -= bb.top;
+        // TODO: Hardcoded 155; try to replace with aboutMe.scrollTop
+        if (adjustedTop < 155) adjustedTop = 155;
+        largeNav.style.top = `${adjustedTop}px`;
+        largeNav.adjustedTop = adjustedTop;
+      }
+    }
+  });
 </script>
 
 

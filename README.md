@@ -20,3 +20,6 @@ Last Modified on: 11/30/2018
 Last Modified on: 12/3/2018
   Changes Include: Created projects page, installed and began lightbox gallery implementation, Fixed transition in dropmenu, fixed section flexbox
   Issues: About me section spacing in responsiveness, continue trying calc().
+
+Last Modified on: 12/5/2018
+  Changes Include: Section positioning and responsiveness fixed.
