@@ -168,13 +168,13 @@ nav .dropItems a {
 }
 
 /************************ About Me- Body *************************************/
-.aboutMe {
+.aboutMe, .projects {
   background: lightgray;
   padding: 5px;
   margin: 5px;
 }
 
-.aboutMe .flex {
+.aboutMe .flex, .projects .flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -202,13 +202,9 @@ nav .dropItems a {
 }
 
 /********************* Projects- Body **************/
-.projects .container{
-  overflow: hidden;
+
+.projects{
   margin: 0 auto;
-}
-.lightgallery{
-  display: flex;
-  flex-direction: row;
 }
 
 /*
@@ -226,10 +222,10 @@ img {
   width: 200px;
   margin: 0 auto;
 }
-
-.thumb{
-  width: 40%;
-
+.projects img{
+  width: 200px;
+  height: 125px;
+  margin: 5px;
 }
 
 /* clearfix - in case you decide to float elements */
@@ -267,7 +263,7 @@ img {
     word-wrap: break-word;
   }
 
-  .aboutMe {
+  .aboutMe, .projects {
     margin: 4px;
   }
 
@@ -292,7 +288,6 @@ img {
 
   header {
     width: 90vw;
-    /* margin: 0 auto; */
     margin-left: 5vw;
 
   }
@@ -300,7 +295,6 @@ img {
   .largeNav {
     position: absolute;
     width: 150px;
-    /* height: 80vw; */
     left: 5vw;
     top: 155px;
   }
@@ -318,7 +312,7 @@ img {
     visibility: hidden;
   }
 
-  .aboutMe {
+  .aboutMe, .projects {
     width: calc(90vw - 150px);
     position: relative;
     left: calc(5vw + 150px);
@@ -328,6 +322,12 @@ img {
 
   .aboutMe img {
     position: relative;
+  }
+
+  .projects img{
+    width: 250px;
+    height: 175px;
+    margin: 10px;
   }
 }
 

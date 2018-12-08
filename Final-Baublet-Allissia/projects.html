@@ -20,8 +20,6 @@
   <script defer src="https://use.fontawesome.com/releases/v5.4.2/js/all.js" integrity="sha384-wp96dIgDl5BLlOXb4VMinXPNiB32VYBSoXOoiARzSTXY+tsK8yDTYfvdTyqzdGGN" crossorigin="anonymous"></script>
 
   <!-- Other CSS for Plugins and such -->
-    <!-- LightGallery -->
-    <link type="text/css" rel="stylesheet" href="js/lightgallery-master/src/css/lightgallery.css"/>
 
   <!-- Local CSS -->
   <link rel="stylesheet" href="css/styles.css">
@@ -99,69 +97,67 @@
     <h1 class="sr-only">Projects</h1>
     <div class="container">
 
-      <div id="lightgallery">
-        <a href="images/bso.jpg" class="galleryItem">
-            <img src="images/bso.jpg" class="thumb"/>
+        <div class="flex">
+
+          <!-- Bloomington Symphony Orchestra -->
+          <a href="images/lg/bso.jpg">
+            <img src="images/thumb/bso.jpg"/>
         </a>
-        <a href="images/quote_design.jpg" class="galleryItem">
-            <img src="images/quote_design.jpg" class="thumb"/>
+
+          <!-- Web Design Quote and Layout -->
+          <a href="images/lg/quote_design.jpg">
+            <img src="images/thumb/quote_design.jpg"/>
         </a>
-        <a href="images/compA.jpg" class="galleryItem">
-            <img src="images/compA.jpg" class="thumb"/>
+          <!-- Digital Imagery Fantasy Scene -->
+          <a href="images/lg/figureLandscapeA.jpg">
+            <img src="images/thumb/figureLandscapeA.jpg"/>
         </a>
-        <a href="images/hybridAnimal.jpg" class="galleryItem">
-            <img src="images/hybridAnimal.jpg" class="thumb"/>
+          <!-- Digital Imagery Wolf Squirrel -->
+          <a href="images/lg/hybridAnimal.jpg" >
+            <img src="images/thumb/hybridAnimal.jpg"/>
         </a>
-        <a href="images/osxtern.jpg" class="galleryItem">
-            <img src="images/osxtern.jpg" class="thumb"/>
+          <!-- OSXtern Technical Screen -->
+          <a href="images/lg/osxtern.jpg">
+            <img src="images/thumb/osxtern.jpg"/>
         </a>
-        <a href="images/ucommon.jpg" class="galleryItem">
-            <img src="images/ucommon.jpg" class="thumb"/>
+          <!-- HCI App Design Project -->
+          <a href="images/lg/ucommon.jpg" >
+            <img src="images/thumb/ucommon.jpg"/>
         </a>
-        <a href="images/dagwoods-redesign.jpg" class="galleryItem">
-            <img src="images/dagwoods-redesign.jpg" class="thumb"/>
+          <!-- Web Design Dagswoods ReDesign -->
+          <a href="images/lg/dagwoods-redesign.jpg" class="galleryItem">
+            <img src="images/thumb/dagwoods-redesign.jpg"/>
         </a>
-        <a href="images/FigureLandscape_Video.mp4" class="galleryItem">
-            <img src="images/FigureLandscape_Video.jpg" class="thumb"/>
+          <!-- Digital Imagery Fantasy Scene Video -->
+          <a href="images/lg/FigureLandscape_Video.mp4">
+            <img src="images/thumb/FigureLandscape_Video.jpg"/>
         </a>
       </div>
+      <!-- end gallery div -->
     </div>
   </article>
 
+  <!-- Navigation Script -->
+  <script>
+    /* Set the width of the side navigation to associated screen width */
+    function openNav() {
+      //orange-small
+      if (document.documentElement.clientWidth >= 576) {
+        document.getElementById("mySidenav").style.width = "200px";
+      }
+      //white-xsmall
+      else if (document.documentElement.clientWidth < 576) {
+        document.getElementById("mySidenav").style.width = "150px";
+      }
+    }
 
-      <!-- Navigation Script -->
-      <script>
-        /* Set the width of the side navigation to associated screen width */
-        function openNav() {
-          //orange-small
-          if (document.documentElement.clientWidth >= 576) {
-            document.getElementById("mySidenav").style.width = "200px";
-          }
-          //white-xsmall
-          else if (document.documentElement.clientWidth < 576) {
-            document.getElementById("mySidenav").style.width = "150px";
-          }
-        }
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
 
-        /* Set the width of the side navigation to 0 */
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-        }
-      </script>
-
-      <!-- LightGallery Script -->
-      <script src="js/lightgallery-master/dist/js/lightgallery.min.js"></script>
-      <script src="js/lightgallery-master/dist/js/lg-thumbnail.min.js"></script>
-      <script src="js/lightgallery-master/dist/js/lg-fullscreen.min.js"></script>
-      <script type="text/javascript">
-        require(['./lightgallery.js'], function() {
-          require(["./lg-zoom.js", "./lg-thumbnail.js"], function(){
-            lightGallery(document.getElementById('lightgallery'));
-          });
-        });
-        lightGallery(document.getElementById('lightgallery'));
-      </script>
-  </body>
+</body>
 <!-- <footer>
 	<p>Copyright &copy; Allissia Baublet, 2016</p>
 </footer> -->
