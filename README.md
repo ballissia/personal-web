@@ -25,4 +25,4 @@ Last Modified on: 12/5/2018
   Changes Include: Section positioning and responsiveness fixed, adjusted width of header and section, sticky nav menu.
 
 Last Modified on: 12/8/2018
-  Changes Include: removed lightgallery plugin. Began gallery from scratch in preparation for lightbox plugin, added img flex and padding, included transform and grayscale on img hover.
+  Changes Include: removed lightgallery plugin. Began gallery from scratch in preparation for lightbox plugin, added img flex and padding, included transform and grayscale on img hover. Added lightbox plugin, titles, sticky menu.

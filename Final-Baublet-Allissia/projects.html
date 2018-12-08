@@ -20,8 +20,9 @@
   <script defer src="https://use.fontawesome.com/releases/v5.4.2/js/all.js" integrity="sha384-wp96dIgDl5BLlOXb4VMinXPNiB32VYBSoXOoiARzSTXY+tsK8yDTYfvdTyqzdGGN" crossorigin="anonymous"></script>
 
   <!-- Other CSS for Plugins and such -->
-
-  <!-- Local CSS -->
+  <!-- LightBox -->
+  <link rel="stylesheet" href="js/lightbox2-master/dist/css/lightbox.css">
+  <link rel="stylesheet" href="js/lightbox2-master/dist/css/lightbox.min.css" <!-- Local CSS -->
   <link rel="stylesheet" href="css/styles.css">
 
   <!--[if lte IE 9]>
@@ -97,39 +98,38 @@
     <h1 class="sr-only">Projects</h1>
     <div class="container">
 
-        <div class="flex">
+      <div class="flex">
 
-          <!-- Bloomington Symphony Orchestra -->
-          <a href="images/lg/bso.jpg">
+        <!-- Bloomington Symphony Orchestra -->
+        <a href="images/lg/bso.jpg" id="bso" data-lightbox="mygallery" data-title="Bloomington Symphony Orchestra Update">
             <img src="images/thumb/bso.jpg"/>
         </a>
-
-          <!-- Web Design Quote and Layout -->
-          <a href="images/lg/quote_design.jpg">
+        <!-- OSXtern Technical Screen -->
+        <a href="images/lg/osxtern.jpg" data-lightbox="mygallery" data-title="Hifi Exercise for Application Design">
+          <img src="images/thumb/osxtern.jpg"/>
+      </a>
+        <!-- HCI App Design Project -->
+        <a href="images/lg/ucommon.jpg" data-lightbox="mygallery" data-title="Another App Design Exercise">
+          <img src="images/thumb/ucommon.jpg"/>
+      </a>
+        <!-- Web Design Quote and Layout -->
+        <a href="images/lg/quote_design.jpg" data-lightbox="mygallery" data-title="Design Exercise using a Quote">
             <img src="images/thumb/quote_design.jpg"/>
         </a>
-          <!-- Digital Imagery Fantasy Scene -->
-          <a href="images/lg/figureLandscapeA.jpg">
-            <img src="images/thumb/figureLandscapeA.jpg"/>
-        </a>
-          <!-- Digital Imagery Wolf Squirrel -->
-          <a href="images/lg/hybridAnimal.jpg" >
-            <img src="images/thumb/hybridAnimal.jpg"/>
-        </a>
-          <!-- OSXtern Technical Screen -->
-          <a href="images/lg/osxtern.jpg">
-            <img src="images/thumb/osxtern.jpg"/>
-        </a>
-          <!-- HCI App Design Project -->
-          <a href="images/lg/ucommon.jpg" >
-            <img src="images/thumb/ucommon.jpg"/>
-        </a>
-          <!-- Web Design Dagswoods ReDesign -->
-          <a href="images/lg/dagwoods-redesign.jpg" class="galleryItem">
+        <!-- Web Design Dagswoods ReDesign -->
+        <a href="images/lg/dagwoods-redesign.jpg" data-lightbox="mygallery" data-title="Dagwood's Deli Design Revision">
             <img src="images/thumb/dagwoods-redesign.jpg"/>
         </a>
-          <!-- Digital Imagery Fantasy Scene Video -->
-          <a href="images/lg/FigureLandscape_Video.mp4">
+        <!-- Digital Imagery Wolf Squirrel -->
+        <a href="images/lg/hybridAnimal.jpg" data-lightbox="mygallery" data-title="Photoshop Exercise to Blend Two Animals">
+          <img src="images/thumb/hybridAnimal.jpg"/>
+        </a>
+        <!-- Digital Imagery Fantasy Scene -->
+        <a href="images/lg/figureLandscapeA.jpg" data-lightbox="mygallery" data-title="Photoshop Exercise using Fantasy Characters">
+          <img src="images/thumb/figureLandscapeA.jpg"/>
+        </a>
+        <!-- Digital Imagery Fantasy Scene Video -->
+        <a href="images/lg/FigureLandscape_Video.mp4" data-lightbox="mygallery" data-title="Movement of Fantasy Characters using Adobe Afteraffects">
             <img src="images/thumb/FigureLandscape_Video.jpg"/>
         </a>
       </div>
@@ -155,6 +155,36 @@
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
+
+    window.addEventListener("scroll", function stickyMenu() {
+      // this is to get the large nav to be sticky
+      let largeNav = document.getElementsByClassName("largeNav")[0];
+      let projects = document.getElementsByClassName("projects")[0];
+
+      if (largeNav && projects) {
+        let bb = largeNav.getBoundingClientRect();
+        let projectsBB = projects.getBoundingClientRect();
+
+        let adjustedTop = largeNav.adjustedTop || 0;
+        let adjustedBottom = largeNav.adjustedBottom || 0;
+
+        if (bb.top < 0 || bb.bottom > window.innerHeight) {
+          adjustedTop -= bb.top;
+          // TODO: Hardcoded 155; try to replace with projects.scrollTop
+          if (adjustedTop < 155) adjustedTop = 155;
+          largeNav.style.top = `${adjustedTop}px`;
+          largeNav.adjustedTop = adjustedTop;
+        }
+      }
+    });
+
+  </script>
+
+  <!-- Light Box Script -->
+  <script src="js/lightbox2-master/dist/js/lightbox-plus-jquery.min.js"></script>
+
+  <script>
+
   </script>
 
 </body>
