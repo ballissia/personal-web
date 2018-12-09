@@ -51,6 +51,7 @@ html, body{
   /*centers the container with room at top*/
 }
 
+
 /****************** HEADER *************/
 /* Photo by Will Swann on Unsplash*/
 header {
@@ -167,21 +168,21 @@ nav .dropItems a {
   transition-timing-function: ease-in-out;
 }
 
-/************************ About Me- Body *************************************/
-.aboutMe, .projects {
+/************************ About Me, Projects, Contact **********************************/
+.aboutMe, .projects, .contact {
   background: lightgray;
   padding: 5px;
   margin: 5px;
 }
 
-.aboutMe .flex, .projects .flex {
+.aboutMe .flex, .projects .flex, .contact .flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.aboutMe section {
+.aboutMe section, .contact section {
   border: 2px solid black;
   margin: 10px;
   padding: 0 10px;
@@ -201,11 +202,6 @@ nav .dropItems a {
   padding: 0 5px 10px 5px;
 }
 
-/********************* Projects- Body **************/
-
-.projects{
-  margin: 0 auto;
-}
 
 /*
     TYPOGRAPHY
@@ -234,6 +230,7 @@ img {
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
 }
+
 
 /* clearfix - in case you decide to float elements */
 .group::after {
