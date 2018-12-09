@@ -169,20 +169,20 @@ nav .dropItems a {
 }
 
 /************************ About Me, Projects, Contact **********************************/
-.aboutMe, .projects, .contact, .resume {
+.aboutMe, .projects, .projectInfo, .contact, .resume {
   background: lightgray;
   padding: 5px;
   margin: 5px;
 }
 
-.aboutMe .flex, .projects .flex, .contact .flex, .resume .flex {
+.aboutMe .flex, .projects .flex, .projectInfo .flex, .contact .flex, .resume .flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.aboutMe section, .contact section {
+.aboutMe section, .projectInfo section, .projectInfo section, .contact section {
   border: 2px solid black;
   margin: 10px;
   padding: 0 10px;
@@ -190,14 +190,18 @@ nav .dropItems a {
   max-width: 300px;
 }
 
-.aboutMe h2 {
+.aboutMe h2, .projectInfo h2 {
   text-align: center;
   border-bottom: 2px dashed black;
 }
 
-.aboutMe p {
+.projectInfo h1{
+  text-align: center;
+}
+
+.aboutMe p, .projectInfo p {
   margin: 0 auto;
-  text-align: justify;
+  text-align: center;
   font-size: 18px;
   padding: 0 5px 10px 5px;
 }
@@ -285,7 +289,7 @@ img {
     word-wrap: break-word;
   }
 
-  .aboutMe, .projects, .contact, .resume {
+  .aboutMe, .projects, .projectInfo, .contact, .resume {
     margin: 4px;
   }
 
@@ -346,7 +350,7 @@ img {
     visibility: hidden;
   }
 
-  .aboutMe, .projects, .contact, .resume {
+  .aboutMe, .projects, .projectInfo, .contact, .resume {
     width: calc(90vw - 150px);
     position: relative;
     left: calc(5vw + 150px);
@@ -378,12 +382,12 @@ img {
     background-color: blue;
   }
 
-  .aboutMe, .projects, .contact, .resume {
+  .aboutMe, .projects, .projectInfo, .contact, .resume {
     left: calc(5vw + 150px);
     width: calc(90vw - 150px);
   }
 
-  .aboutMe .container {
+  .aboutMe .container, .projectInfo .container {
     margin: 0 auto;
   }
   .projects img{
@@ -402,7 +406,7 @@ img {
     background-color: purple;
   }
 
-  .aboutMe, .projects, .contact, .resume {
+  .aboutMe, .projects, .projectInfo, .contact, .resume {
     width: calc(90vw - 150px);
   }
   .resume img{
