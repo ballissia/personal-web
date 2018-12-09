@@ -7,7 +7,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Projects</title>
+  <title>Resume</title>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -34,7 +34,7 @@
      custom logo-->
 <header>
   <div class="container">
-    <h1>Projects</h1>
+    <h1>Resume</h1>
   </div>
 </header>
 
@@ -42,7 +42,7 @@
 			 Overlay and Dropdown Functionality by W3Schools...
 	-->
 
-  <nav>
+	<nav>
     <div class="container">
       <span onclick="openNav()" class="icon"><i class="fas fa-bars fa-2x"></i></span>
 
@@ -94,57 +94,32 @@
   </nav>
 
 <body>
-  <article class="projects">
+	<!--**************** Resume and References *******************-->
 
-    <!--********************** Projects **************************-->
-
-    <h1 class="sr-only">Projects</h1>
+  <article class="resume">
+    <h1 class="sr-only">Resume and References</h1>
     <div class="container">
 
       <div class="flex">
 
-        <!-- Bloomington Symphony Orchestra -->
-        <a href="images/lg/bso.jpg" id="bso" data-lightbox="mygallery" data-title="Bloomington Symphony Orchestra Update">
-            <img src="images/thumb/bso.jpg"/>
+        <!-- Resume -->
+        <a href="images/lg/resume.jpg" id="bso" data-lightbox="mygallery" data-title="Resume">
+            <img src="images/thumb/resume.jpg"/>
         </a>
-        <!-- OSXtern Technical Screen -->
-        <a href="images/lg/osxtern.jpg" data-lightbox="mygallery" data-title="Hifi Exercise for Application Design">
-          <img src="images/thumb/osxtern.jpg"/>
+        <!-- References -->
+        <a href="images/lg/references.jpg" data-lightbox="mygallery" data-title="References">
+          <img src="images/thumb/references.jpg"/>
       </a>
-        <!-- HCI App Design Project -->
-        <a href="images/lg/ucommon.jpg" data-lightbox="mygallery" data-title="Another App Design Exercise">
-          <img src="images/thumb/ucommon.jpg"/>
-      </a>
-        <!-- Web Design Quote and Layout -->
-        <a href="images/lg/quote_design.jpg" data-lightbox="mygallery" data-title="Design Exercise using a Quote">
-            <img src="images/thumb/quote_design.jpg"/>
-        </a>
-        <!-- Web Design Dagswoods ReDesign -->
-        <a href="images/lg/dagwoods-redesign.jpg" data-lightbox="mygallery" data-title="Dagwood's Deli Design Revision">
-            <img src="images/thumb/dagwoods-redesign.jpg"/>
-        </a>
-        <!-- Digital Imagery Wolf Squirrel -->
-        <a href="images/lg/hybridAnimal.jpg" data-lightbox="mygallery" data-title="Photoshop Exercise to Blend Two Animals">
-          <img src="images/thumb/hybridAnimal.jpg"/>
-        </a>
-        <!-- Digital Imagery Fantasy Scene -->
-        <a href="images/lg/figureLandscapeA.jpg" data-lightbox="mygallery" data-title="Photoshop Exercise using Fantasy Characters">
-          <img src="images/thumb/figureLandscapeA.jpg"/>
-        </a>
-        <!-- Digital Imagery Fantasy Scene Video -->
-        <a href="images/lg/FigureLandscape_Video.mp4" data-lightbox="mygallery" data-title="Movement of Fantasy Characters using Adobe Afteraffects">
-            <img src="images/thumb/FigureLandscape_Video.jpg"/>
-        </a>
+
       </div>
       <!-- end gallery div -->
     </div>
   </article>
 
   <footer>
+		<!--********************** Contact Me **************************-->
+
     <article class="contact" id="contact">
-
-      <!--********************** Contact Me **************************-->
-
       <h1>Contact Me</h1>
       <div class="container">
 
@@ -197,11 +172,11 @@
     // Sticky Menu
     window.addEventListener("scroll", function stickyMenu() {
       let largeNav = document.getElementsByClassName("largeNav")[0];
-      let projects = document.getElementsByClassName("projects")[0];
+      let resume = document.getElementsByClassName("resume")[0];
 
-      if (largeNav && projects) {
+      if (largeNav && resume) {
         let bb = largeNav.getBoundingClientRect();
-        let projectsBB = projects.getBoundingClientRect();
+        let resumeBB = resume.getBoundingClientRect();
 
         let adjustedTop = largeNav.adjustedTop || 0;
         let adjustedBottom = largeNav.adjustedBottom || 0;

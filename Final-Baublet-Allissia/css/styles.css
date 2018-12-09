@@ -169,13 +169,13 @@ nav .dropItems a {
 }
 
 /************************ About Me, Projects, Contact **********************************/
-.aboutMe, .projects, .contact {
+.aboutMe, .projects, .contact, .resume {
   background: lightgray;
   padding: 5px;
   margin: 5px;
 }
 
-.aboutMe .flex, .projects .flex, .contact .flex {
+.aboutMe .flex, .projects .flex, .contact .flex, .resume .flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -227,14 +227,19 @@ img {
   width: 200px;
   margin: 0 auto;
 }
-.projects img{
+.projects img, .resume img{
   width: 350px;
   height: 275px;
   margin: 5px;
   filter: grayscale(90%);
 }
 
-.projects img:hover{
+.resume img{
+  width: 300px;
+  height: 500px;
+}
+
+.projects img:hover, .resume img:hover{
   filter: grayscale(0);
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
@@ -276,19 +281,21 @@ img {
     word-wrap: break-word;
   }
 
-  .aboutMe, .projects, .contact {
+  .aboutMe, .projects, .contact, .resume {
     margin: 4px;
   }
 
   .aboutMe img {
     max-width: 200px;
   }
-  .projects img{
+  .projects img, .resume img{
     width: 250px;
     height: 175px;
     margin: 5px;
   }
-
+  .resume img{
+    height: 400px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -331,7 +338,7 @@ img {
     visibility: hidden;
   }
 
-  .aboutMe, .projects, .contact {
+  .aboutMe, .projects, .contact, .resume {
     width: calc(90vw - 150px);
     position: relative;
     left: calc(5vw + 150px);
@@ -348,6 +355,9 @@ img {
     height: 175px;
     margin: 10px;
   }
+  .resume img{
+    width: 300px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -356,7 +366,7 @@ img {
     background-color: blue;
   }
 
-  .aboutMe, .projects, .contact {
+  .aboutMe, .projects, .contact, .resume {
     left: calc(5vw + 150px);
     width: calc(90vw - 150px);
   }
@@ -368,6 +378,10 @@ img {
     width: 250px;
     height: 175px;
   }
+  .resume img{
+    width: 350px;
+    height: 500px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -376,7 +390,11 @@ img {
     background-color: purple;
   }
 
-  .aboutMe, .projects, .contact {
+  .aboutMe, .projects, .contact, .resume {
     width: calc(90vw - 150px);
+  }
+  .resume img{
+    width: 500px;
+    height: 600px;
   }
 }
