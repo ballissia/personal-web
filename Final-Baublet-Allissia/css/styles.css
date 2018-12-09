@@ -202,6 +202,15 @@ nav .dropItems a {
   padding: 0 5px 10px 5px;
 }
 
+.contact p{
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact h1{
+  text-align: center;
+}
+
 
 /*
     TYPOGRAPHY
@@ -267,7 +276,7 @@ img {
     word-wrap: break-word;
   }
 
-  .aboutMe, .projects {
+  .aboutMe, .projects, .contact {
     margin: 4px;
   }
 
@@ -279,6 +288,7 @@ img {
     height: 175px;
     margin: 5px;
   }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -321,7 +331,7 @@ img {
     visibility: hidden;
   }
 
-  .aboutMe, .projects {
+  .aboutMe, .projects, .contact {
     width: calc(90vw - 150px);
     position: relative;
     left: calc(5vw + 150px);
@@ -346,7 +356,7 @@ img {
     background-color: blue;
   }
 
-  .aboutMe, .projects {
+  .aboutMe, .projects, .contact {
     left: calc(5vw + 150px);
     width: calc(90vw - 150px);
   }
@@ -366,7 +376,7 @@ img {
     background-color: purple;
   }
 
-  .aboutMe {
+  .aboutMe, .projects, .contact {
     width: calc(90vw - 150px);
   }
 }

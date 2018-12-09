@@ -26,3 +26,6 @@ Last Modified on: 12/5/2018
 
 Last Modified on: 12/8/2018
   Changes Include: removed lightgallery plugin. Began gallery from scratch in preparation for lightbox plugin, added img flex and padding, included transform and grayscale on img hover. Added lightbox plugin, titles, sticky menu. Added contact page with contact icons.
+
+Last Modified on: 12/9/2018
+  Changes Include: added contact section to footer, adjusted footer for responsiveness. Removed separate contact page. Duplicated associated code to projects page.

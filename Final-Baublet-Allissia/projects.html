@@ -66,7 +66,7 @@
       </div>
       <a href="#">Resume</a>
       <a href="index.html">About</a>
-      <a href="#">Contact</a>
+      <a href="#contact">Contact</a>
     </div>
     <!-- End Side Nav -->
 
@@ -87,7 +87,7 @@
       </div>
       <a href="#">Resume</a>
       <a href="index.html">About</a>
-      <a href="#">Contact</a>
+      <a href="#contact">Contact</a>
     </div>
     <!-- End LargeNav -->
   </div>
@@ -137,6 +137,38 @@
     </div>
   </article>
 
+  <footer>
+    <article class="contact">
+      <h1>Contact Me</h1>
+      <div class="container">
+
+          <div class="flex">
+            <section class="traditional">
+              <i class="fas fa-envelope fa-3x" onclick="copyEmail()" style="color: black; margin: 5px; "></i></a>
+
+              <p>Email</p>
+            </section>
+
+            <section class="linkedIn">
+              <a href="linkedin.com/in/allissiabaublet"><i class="fab fa-linkedin fa-3x" style="color: black; margin: 5px; "></i></a>
+
+              <p>LinkedIn</p>
+            </section>
+
+            <section class="schoolGithub">
+              <a href="https://github.iu.edu/abaublet"><i class="fab fa-github fa-3x" style="color: black; margin: 5px; "></i></a>
+
+              <p>Github</p>
+            </section>
+
+          </div>
+          <!-- flex box end -->
+      </div>
+
+  	<p>Copyright &copy; Allissia Baublet, 2016</p>
+  </footer>
+</body>
+
   <!-- Navigation Script -->
   <script>
     /* Set the width of the side navigation to associated screen width */
@@ -178,6 +210,10 @@
       }
     });
 
+    // Copy Email address
+    function copyEmail(){
+       navigator.clipboard.writeText("ballissia@yahoo.com");
+    }
   </script>
 
   <!-- Light Box Script -->
@@ -186,10 +222,4 @@
   <script>
 
   </script>
-
-</body>
-<!-- <footer>
-	<p>Copyright &copy; Allissia Baublet, 2016</p>
-</footer> -->
-
 </html>
