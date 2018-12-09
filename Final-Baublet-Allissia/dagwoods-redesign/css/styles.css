@@ -1,0 +1,494 @@
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Browser Upgrade Prompt */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* hides an element, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+/*
+    STRUCTURE
+*/
+body {
+  max-width: 1050px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.0em 0.5em;
+  background-image: url("../images/streetway.jpg");
+  background-size: cover;
+}
+
+/* Photo by Raphael Nogueira on Unsplash */
+header {
+  background-image: url("../images/sub.png");
+  background-size: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* Photo by Loudge on Unsplash */
+main {
+  position: relative;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  background-image: url("../images/crossed_stripes/crossed_stripes.png");
+  background-color: lightgray;
+  border-top: 2px solid white;
+}
+
+nav ul {
+  display: flex;
+}
+
+ul li {
+  list-style-type: none;
+  text-align: center;
+  font-size: 26px;
+  margin: 0 1.0em;
+}
+
+ul li:nth-last-child(3) {
+  margin: 0 1.5em 0 0;
+}
+
+h2, h3 {
+  border-bottom: 2px solid rgba(12, 242, 0, 0.5);
+  padding-bottom: 10px;
+}
+
+p {
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+
+footer {
+  background-color: rgba(211, 211, 211, 0.6);
+  color: white;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+#orderOp {
+  background-color: rgba(250, 235, 215, 0.9);
+  margin: 10px 0;
+  padding: 5px;
+}
+
+#orderOp .contact {
+  font-size: 85%;
+}
+
+#orderOnline {
+  padding-top: 5px;
+}
+
+.emailSub {
+  background-color: rgba(211, 211, 211, 0.6);
+  margin: 10px 0;
+  padding: 5px;
+  color: white;
+}
+
+#spotlight {
+  background-color: rgba(250, 235, 215, 0.9);
+  margin: 10px 0;
+  padding: 5px;
+}
+
+/*
+    TYPOGRAPHY
+*/
+h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family: 'Bitter', serif;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+/*
+    IMAGES
+*/
+img {
+  width: 100%;
+  display: block;
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
+.logo {
+  width: 50%;
+}
+
+#spotlight img {
+  width: 30%;
+  margin: 0 auto;
+}
+
+header .icon {
+  color: white;
+}
+
+/* clearfix - in case you decide to float elements */
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+    LINKS
+*/
+.emailSub a, nav a, .orderButton a {
+  text-decoration: none;
+  color: #FF1E1E;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px black;
+  padding: 5px;
+  transition: opacity 0.75s ease-in;
+}
+
+.emailSub a:hover, nav a:hover, .orderButton a:hover {
+  background-color: #A10000;
+  color: #F8F8FF;
+  opacity: 0.75;
+  border-radius: 10px;
+  text-shadow: none;
+}
+
+.icon:hover {
+  opacity: 0.8;
+  color: blue;
+}
+
+/* HOME */
+.emailSub .container {
+  background-image: url("../images/crossed_stripes/crossed_stripes.png");
+  opacity: 0.8;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px black;
+}
+
+footer .container {
+  background-image: url("../images/crossed_stripes/crossed_stripes.png");
+  opacity: 0.8;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px black;
+}
+
+/* HOME */
+.orderButton {
+  background-color: #FF1E1E;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  width: 75px;
+  height: 75px;
+  z-index: 1;
+  float: right;
+  position: fixed;
+  top: 88%;
+  left: 78%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px #888888;
+  border: 2px solid black;
+  padding: 5px;
+  box-shadow: 1px 2px 5px black;
+}
+
+.orderButton a {
+  color: white;
+  font-size: 18px;
+  text-shadow: none;
+}
+
+.orderButton a:hover {
+  padding: 0;
+  color: #FF1E1E;
+  background-color: white;
+  transition: none;
+}
+
+.orderButton:hover {
+  background-color: white;
+}
+
+.emailSub a {
+  padding: 5px 5px;
+  margin: 0 1.5em;
+  background-color: white;
+  border-radius: 10px;
+  text-shadow: none;
+}
+
+.contact p {
+  margin-bottom: -0.5em;
+}
+
+footer .emailSub {
+  background-color: rgba(211, 211, 211, 0);
+}
+
+footer .emailSub a {
+  padding: 5px 5px;
+  margin: 0;
+}
+
+/*
+    ANOTHER PAGE
+*/
+/* Color the stores text white */
+
+figure{
+  width: 50%;
+  margin: 0 auto;
+}
+
+h3{
+  text-align: left;
+  margin-left: 1.0em;
+  width: 90%;
+}
+
+main .container{
+  background-color: rgba(250, 235, 215, 0.9);
+  margin: 10px 0;
+  padding: 5px;
+}
+a.address {
+  text-decoration: none;
+  color: #FF1E1E;
+  font-weight: bold;
+  padding: 5px;
+  transition: opacity 0.75s ease-in;
+}
+
+a.address:hover {
+  color: #F8F8FF;
+  text-shadow: none;
+}
+
+section ul li{
+  font-size: 16px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+#iuCampus .container{
+  background-image: url("../images/crossed_stripes/crossed_stripes.png");
+  opacity: 0.8;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px black;
+  color: white;
+}
+
+#iuCampus a{
+  text-decoration: none;
+  background-color: white;
+  padding: 0 15px;
+  color: #FF1E1E;
+  font-weight: bold;
+  transition: opacity 0.75s ease-in;
+  border-radius: 10px;
+    word-wrap: break-word;
+}
+
+#iuCampus a:hover {
+  color: #F8F8FF;
+  background-color: #A10000;
+  text-shadow: none;
+}
+
+#rwd {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  height: 20px;
+  background-color: red;
+}
+
+/* MEDIA QUERIES */
+/* X-Small devices (portait phones, less than 576px) */
+/* All styles up to this point in the stylesheet are for X-Small */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #rwd{background-color: orange;}
+  .orderButton {
+    left: 85%;
+    top: 83%;
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #rwd{background-color: green;}
+  p {
+    font-size: 18px;
+  }
+
+  #orderOnline {
+    margin-top: 0.5em;
+  }
+
+  .orderButton {
+    left: 85%;
+    top: 83%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .emailSub {
+    height: 420px;
+  }
+
+  .emailSub .container {
+    height: 410px;
+    margin-top: 0;
+  }
+
+  .emailSub a {
+    display: block;
+    margin: 1.0em auto;
+    padding: 0;
+    max-width: 200px;
+  }
+
+  #spotlight {
+    margin-left: 5px;
+    color: white;
+    background-color: rgba(211, 211, 211, 0.6);
+  }
+
+  #spotlight .container {
+    background-image: url("../images/crossed_stripes/crossed_stripes.png");
+    opacity: 0.8;
+    margin: 0;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+    height: 410px;
+  }
+
+  footer {
+    color: black;
+    background-color: rgba(250, 235, 215, 0.9);
+    height: 400px;
+  }
+
+  footer .emailSub {
+    color: black;
+    height: 200px;
+    margin: -15px 0 0 5px;
+  }
+
+  footer .contact {
+    height: 200px;
+  }
+
+  footer .emailSub a {
+    margin: 0 auto 5px;
+  }
+
+  footer .container {
+    background-image: none;
+    box-shadow: none;
+    height: 200px;
+    border-radius: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  article {
+    display: flex;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  body {
+    max-width: 750px;
+  }
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #rwd{background-color: blue;}
+  body {
+    max-width: 800px;
+  }
+
+  footer {
+    height: 200px;
+  }
+
+  footer .emailSub {
+    margin: -5px auto;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #rwd{background-color: purple;}
+  body {
+    max-width: 800px;
+  }
+
+  .orderButton {
+    left: 75%;
+  }
+}

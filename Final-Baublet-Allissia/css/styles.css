@@ -231,7 +231,11 @@ img {
   width: 350px;
   height: 275px;
   margin: 5px;
-  filter: grayscale(90%);
+  filter: grayscale(80%);
+}
+
+#osxtern, #ucommon{
+  width: 150px;
 }
 
 .resume img{
@@ -292,6 +296,10 @@ img {
     width: 250px;
     height: 175px;
     margin: 5px;
+  }
+  #osxtern, #ucommon{
+    width: 200px;
+    height: 300px;
   }
   .resume img{
     height: 400px;
@@ -354,6 +362,10 @@ img {
     width: 250px;
     height: 175px;
     margin: 10px;
+  }
+  #osxtern, #ucommon{
+    width: 250px;
+    height: 400px;
   }
   .resume img{
     width: 300px;
