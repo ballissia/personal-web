@@ -51,6 +51,27 @@ html, body{
   /*centers the container with room at top*/
 }
 
+.upBtn {
+  background-color: gray;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  float: right;
+  position: fixed;
+  top: 90%;
+  left: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  box-shadow: 2px 2px 5px black;
+  opacity: 0.8;
+}
+
+.upBtn:hover{
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
 
 /****************** HEADER *************/
 /* Photo by Will Swann on Unsplash*/
@@ -289,6 +310,9 @@ img {
     word-wrap: break-word;
   }
 
+  .upBtn{
+    left: 92%;
+  }
   .aboutMe, .projects, .projectInfo, .contact, .resume {
     margin: 4px;
   }
@@ -349,7 +373,9 @@ img {
   .sidenav .closebtn {
     visibility: hidden;
   }
-
+  .upBtn{
+    display: none;
+  }
   .aboutMe, .projects, .projectInfo, .contact, .resume {
     width: calc(90vw - 150px);
     position: relative;
