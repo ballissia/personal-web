@@ -287,9 +287,9 @@ img {
 /* All styles up to this point in the stylesheet are for X-Small */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  body {
+  /* body {
     background-color: orange;
-  }
+  } */
 
   header h1 {
     font-size: 50px;
@@ -336,9 +336,9 @@ img {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  body {
+  /* body {
     background-color: green;
-  }
+  } */
 
   .icon {
     visibility: hidden;
@@ -404,9 +404,9 @@ img {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body {
+  /* body {
     background-color: blue;
-  }
+  } */
 
   .aboutMe, .projects, .projectInfo, .contact, .resume {
     left: calc(5vw + 150px);
@@ -428,9 +428,9 @@ img {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  body {
+  /* body {
     background-color: purple;
-  }
+  } */
 
   .aboutMe, .projects, .projectInfo, .contact, .resume {
     width: calc(90vw - 150px);
