@@ -22,7 +22,9 @@
   <!-- Other CSS for Plugins and such -->
   <!-- LightBox -->
   <link rel="stylesheet" href="js/lightbox2-master/dist/css/lightbox.css">
-  <link rel="stylesheet" href="js/lightbox2-master/dist/css/lightbox.min.css" <!-- Local CSS -->
+  <link rel="stylesheet" href="js/lightbox2-master/dist/css/lightbox.min.css" >
+
+  <!-- Local CSS -->
   <link rel="stylesheet" href="css/styles.css">
 
   <!--[if lte IE 9]>
@@ -70,29 +72,28 @@
       </div>
       <!-- End LargeNav -->
     </div>
-      <!-- End Side Nav -->
+    <!-- End Side Nav -->
 
-      <!-- Hidden Nav for larger screens -->
-      <div class="largeNav">
+    <!-- Hidden Nav for larger screens -->
+    <div class="largeNav">
 
-        <!-- Dropdown Container -->
-        <div class="dropdown">
-          <a href="projects.html" class="dropbtn">Projects</a>
-          <div class="dropItems">
-            <a href="#bso">BSO</a>
-            <a href="#web-designP">Web Design</a>
-            <a href="#digital-imageryP">Digital Imagery</a>
-            <a href="#osxternP">OSXtern</a>
-            <a href="#ucommonP">Ucommon</a>
-          </div>
-          <!-- End Dropdown Items -->
+      <!-- Dropdown Container -->
+      <div class="dropdown">
+        <a href="projects.html" class="dropbtn">Projects</a>
+        <div class="dropItems">
+          <a href="#bso">BSO</a>
+          <a href="#web-designP">Web Design</a>
+          <a href="#digital-imageryP">Digital Imagery</a>
+          <a href="#osxternP">OSXtern</a>
+          <a href="#ucommonP">Ucommon</a>
         </div>
-        <a href="resume.html">Resume</a>
-        <a href="index.html">About</a>
-        <a href="#contact">Contact</a>
+        <!-- End Dropdown Items -->
       </div>
-      <!-- End LargeNav -->
+      <a href="resume.html">Resume</a>
+      <a href="index.html">About</a>
+      <a href="#contact">Contact</a>
     </div>
+    <!-- End LargeNav -->
   </nav>
 
 <body>
@@ -101,7 +102,7 @@
     <a href="#header"><i class="fas fa-chevron-circle-up fa-2x" style="color:white;"></i></a>
   </div>
 
-	<!--**************** Resume and References *******************-->
+  <!--**************** Resume and References *******************-->
 
   <article class="resume">
     <h1 class="sr-only">Resume and References</h1>
@@ -109,14 +110,14 @@
 
       <div class="flex">
 
-				<!-- References -->
+        <!-- References -->
         <a href="documents/resume.pdf" target="_blank">
-          <img src="images/thumb/resume.jpg"/>
+          <img src="images/thumb/resume.jpg" alt="resume"/>
       </a>
 
         <!-- References -->
         <a href="documents/references.pdf" target="_blank">
-          <img src="images/thumb/references.jpg"/>
+          <img src="images/thumb/references.jpg" alt="references"/>
       </a>
 
       </div>
@@ -125,84 +126,86 @@
   </article>
 
   <footer>
-		<!--********************** Contact Me **************************-->
-
     <article class="contact" id="contact">
       <h1>Contact Me</h1>
       <div class="container">
 
-          <div class="flex">
-            <section class="traditional">
-              <i class="fas fa-envelope fa-3x" onclick="copyEmail()" style="color: black; margin: 5px; "></i></a>
+        <div class="flex">
+          <section class="traditional">
+            <h3 class="sr-only">Email</h3>
+            <i class="fas fa-envelope fa-3x" onclick="copyEmail()" style="color: #269C70; margin: 5px; "></i>
 
-              <p>Email</p>
-            </section>
+            <p>Email</p>
+          </section>
 
-            <section class="linkedIn">
-              <a href="linkedin.com/in/allissiabaublet"><i class="fab fa-linkedin fa-3x" style="color: black; margin: 5px; "></i></a>
+          <section class="linkedIn">
+            <h3 class="sr-only">LinkedIn</h3>
+            <a href="linkedin.com/in/allissiabaublet"><i class="fab fa-linkedin fa-3x" style="color: #269C70; margin: 5px; "></i></a>
 
-              <p>LinkedIn</p>
-            </section>
+            <p>LinkedIn</p>
+          </section>
 
-            <section class="schoolGithub">
-              <a href="https://github.iu.edu/abaublet"><i class="fab fa-github fa-3x" style="color: black; margin: 5px; "></i></a>
+          <section class="schoolGithub">
+            <h3 class="sr-only">Github</h3>
+            <a href="https://github.iu.edu/abaublet"><i class="fab fa-github fa-3x" style="color: #269C70; margin: 5px; "></i></a>
 
-              <p>Github</p>
-            </section>
+            <p>Github</p>
+          </section>
 
-          </div>
-          <!-- flex box end -->
+        </div>
+        <!-- flex box end -->
       </div>
+    </article>
 
-  	<p>Copyright &copy; Allissia Baublet, 2016</p>
+    <p>Copyright &copy; Allissia Baublet, 2016</p>
   </footer>
 </body>
 
-  <!-- Navigation Script -->
-  <script>
-    /* Set the width of the side navigation to associated screen width */
-    function openNav() {
-      //orange-small
-      if (document.documentElement.clientWidth >= 576) {
-        document.getElementById("mySidenav").style.width = "200px";
-      }
-      //white-xsmall
-      else if (document.documentElement.clientWidth < 576) {
-        document.getElementById("mySidenav").style.width = "150px";
+<!-- Navigation Script -->
+<script>
+  /* Set the width of the side navigation to associated screen width */
+  function openNav() {
+    //orange-small
+    if (document.documentElement.clientWidth >= 576) {
+      document.getElementById("mySidenav").style.width = "200px";
+    }
+    //white-xsmall
+    else if (document.documentElement.clientWidth < 576) {
+      document.getElementById("mySidenav").style.width = "150px";
+    }
+  }
+
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+  // Sticky Menu
+  window.addEventListener("scroll", function stickyMenu() {
+    let largeNav = document.getElementsByClassName("largeNav")[0];
+    let resume = document.getElementsByClassName("resume")[0];
+
+    if (largeNav && resume) {
+      let bb = largeNav.getBoundingClientRect();
+      let resumeBB = resume.getBoundingClientRect();
+
+      let adjustedTop = largeNav.adjustedTop || 0;
+      let adjustedBottom = largeNav.adjustedBottom || 0;
+
+      if (bb.top < 0 || bb.bottom > window.innerHeight) {
+        adjustedTop -= bb.top;
+        // TODO: Hardcoded 155; try to replace with projects.scrollTop
+        if (adjustedTop < 155) adjustedTop = 155;
+        largeNav.style.top = `${adjustedTop}px`;
+        largeNav.adjustedTop = adjustedTop;
       }
     }
+  });
 
-    /* Set the width of the side navigation to 0 */
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-
-    // Sticky Menu
-    window.addEventListener("scroll", function stickyMenu() {
-      let largeNav = document.getElementsByClassName("largeNav")[0];
-      let resume = document.getElementsByClassName("resume")[0];
-
-      if (largeNav && resume) {
-        let bb = largeNav.getBoundingClientRect();
-        let resumeBB = resume.getBoundingClientRect();
-
-        let adjustedTop = largeNav.adjustedTop || 0;
-        let adjustedBottom = largeNav.adjustedBottom || 0;
-
-        if (bb.top < 0 || bb.bottom > window.innerHeight) {
-          adjustedTop -= bb.top;
-          // TODO: Hardcoded 155; try to replace with projects.scrollTop
-          if (adjustedTop < 155) adjustedTop = 155;
-          largeNav.style.top = `${adjustedTop}px`;
-          largeNav.adjustedTop = adjustedTop;
-        }
-      }
-    });
-
-    // Copy Email address
-    function copyEmail(){
-       navigator.clipboard.writeText("ballissia@yahoo.com");
-    }
-  </script>
+  // Copy Email address
+  function copyEmail() {
+    navigator.clipboard.writeText("ballissia@yahoo.com");
+  }
+</script>
 
 </html>
