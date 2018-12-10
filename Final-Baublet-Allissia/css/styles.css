@@ -224,7 +224,6 @@ nav .dropItems a {
 }
 
 .projectInfo {
-  margin-top: -5px;
   background: #269C70;
 }
 .projectInfo a{
@@ -444,9 +443,8 @@ img {
   .resume img {
     width: 300px;
   }
-
-  .projectInfo {
-    margin-top: -5px;
+  .projectInfo{
+    margin-top: 10px;
   }
   footer{
     width: 0;
@@ -474,10 +472,6 @@ img {
     height: 175px;
   }
 
-  .projectInfo {
-    margin-top: -5px;
-  }
-
   .resume img {
     width: 350px;
     height: 500px;
@@ -499,7 +493,4 @@ img {
     height: 600px;
   }
 
-  .projectInfo {
-    margin-top: -15px;
-  }
 }
