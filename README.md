@@ -31,3 +31,6 @@ Last Modified on: 12/9/2018
   Changes Include: added contact section to footer, adjusted footer for responsiveness. Removed separate contact page. Duplicated associated code to projects page. Email icon copies my email to clipboard on click. Added resume page and associated functionality. Updated project thumbnails, resume images and download links. Added project Details. Added button to return to top on small screens. Links work properly. Added color and font familys.
 
   Issues: unable to scale icons or change them in css. No visual confirmation on email icon click.
+
+Last Modified on: 12/10/2018
+  Changes include: minor spacing adjustments, removed footer spacing on bottom.

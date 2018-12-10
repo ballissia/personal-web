@@ -7,7 +7,8 @@ html {
 html, body {
   padding: 0;
   margin: 0;
-  background: #00005C;
+  /* background: #00005C; */
+  background-image: url("../images/gplay.png");
 }
 
 *, *:before, *:after {
@@ -53,6 +54,10 @@ html, body {
   /*centers the container with room at top*/
 }
 
+/* #logo{
+  width: 100px;
+} */
+
 .upBtn {
   background-color: #269C70;
   width: 50px;
@@ -74,6 +79,7 @@ html, body {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
+
 
 /****************** HEADER *************/
 /* Photo by Will Swann on Unsplash*/
@@ -193,8 +199,8 @@ nav .dropItems a {
 
 /************************ About Me, Projects, Contact **********************************/
 .aboutMe, .projects, .projectInfo, .contact, .resume {
-  background: rgba(170, 177, 191, 1);
-  background-image: url("../images/gplay.png");
+  background: rgba(170, 177, 191, 0.6);
+  /* background-image: url("../images/gplay.png"); */
   padding: 5px;
   margin: 5px;
 }
@@ -207,7 +213,7 @@ nav .dropItems a {
 }
 
 .aboutMe section, .projectInfo section, .projectInfo section, .contact section {
-  border: 2px solid #00005C;
+  border: 2px solid #269C70;
   margin: 10px;
   padding: 0 10px;
   border-radius: 5px;
@@ -232,21 +238,25 @@ nav .dropItems a {
   text-align: center;
   border-bottom: 2px dashed black;
 }
-
+.aboutMe .what h2{
+  font-size: 20px;
+  padding: 5px;
+}
 .projectInfo h1 {
   text-align: center;
 }
 
 .aboutMe p, .projectInfo p {
   margin: 0 auto;
-  text-align: center;
-  font-size: 18px;
-  padding: 0 5px 10px 5px;
+  text-align: left;
+  font-size: 16px;
+  padding: 0 15px 20px 15px;
+  line-height: 1.3em;
 }
 
 .contact {
   background: rgba(235, 235, 235, 1);
-  margin-top: -15px;
+
 }
 
 .contact section {
@@ -294,10 +304,6 @@ img {
   height: 275px;
   margin: 5px;
   filter: grayscale(80%);
-}
-
-#osxtern, #ucommon {
-  width: 150px;
 }
 
 .resume img {
@@ -364,11 +370,6 @@ img {
     margin: 5px;
   }
 
-  #osxtern, #ucommon {
-    width: 200px;
-    height: 300px;
-  }
-
   .resume img {
     height: 400px;
   }
@@ -377,9 +378,6 @@ img {
     margin-top: -5px;
   }
 
-  .contact {
-    margin-top: -15px;
-  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -443,11 +441,6 @@ img {
     margin: 10px;
   }
 
-  #osxtern, #ucommon {
-    width: 250px;
-    height: 400px;
-  }
-
   .resume img {
     width: 300px;
   }
@@ -455,9 +448,9 @@ img {
   .projectInfo {
     margin-top: -5px;
   }
-
-  .contact {
-    margin-top: -15px;
+  footer{
+    width: 0;
+    height: 0;
   }
 }
 
@@ -507,10 +500,6 @@ img {
   }
 
   .projectInfo {
-    margin-top: -15px;
-  }
-
-  .contact {
     margin-top: -15px;
   }
 }
