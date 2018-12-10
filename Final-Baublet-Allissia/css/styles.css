@@ -57,7 +57,6 @@ html, body {
 /* #logo{
   width: 100px;
 } */
-
 .upBtn {
   background-color: #269C70;
   width: 50px;
@@ -79,7 +78,6 @@ html, body {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
-
 
 /****************** HEADER *************/
 /* Photo by Will Swann on Unsplash*/
@@ -226,21 +224,26 @@ nav .dropItems a {
 .projectInfo {
   background: #269C70;
 }
-.projectInfo a{
+
+.projectInfo a {
   color: black;
   text-decoration: none;
 }
-.projectInfo a:hover{
+
+.projectInfo a:hover {
   color: #3ec7ff;
 }
+
 .aboutMe h2, .projectInfo h2 {
   text-align: center;
   border-bottom: 2px dashed black;
 }
-.aboutMe .what h2{
+
+.aboutMe .what h2 {
   font-size: 20px;
   padding: 5px;
 }
+
 .projectInfo h1 {
   text-align: center;
 }
@@ -255,7 +258,6 @@ nav .dropItems a {
 
 .contact {
   background: rgba(235, 235, 235, 1);
-
 }
 
 .contact section {
@@ -376,7 +378,6 @@ img {
   .projectInfo {
     margin-top: -5px;
   }
-
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -443,10 +444,12 @@ img {
   .resume img {
     width: 300px;
   }
-  .projectInfo{
+
+  .projectInfo {
     margin-top: 10px;
   }
-  footer{
+
+  footer {
     width: 0;
     height: 0;
   }
@@ -492,5 +495,4 @@ img {
     width: 500px;
     height: 600px;
   }
-
 }
