@@ -33,4 +33,4 @@ Last Modified on: 12/9/2018
   Issues: unable to scale icons or change them in css. No visual confirmation on email icon click.
 
 Last Modified on: 12/10/2018
-  Changes include: minor spacing adjustments, removed footer spacing on bottom, background change.
+  Changes include: minor spacing adjustments, removed footer spacing on bottom, background change. Fixed broken.
