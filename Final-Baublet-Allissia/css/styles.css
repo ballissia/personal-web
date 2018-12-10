@@ -224,7 +224,9 @@ nav .dropItems a {
 .projectInfo {
   background: #269C70;
 }
-
+.projectInfo section{
+  border-color: #3ec7ff;
+}
 .projectInfo a {
   color: black;
   text-decoration: none;
